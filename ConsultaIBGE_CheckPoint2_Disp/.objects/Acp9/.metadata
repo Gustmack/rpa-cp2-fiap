@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Edge Brasil  Cidades e Estados  IBGE",
+  "Type": "App",
+  "Id": "Acp9wV0yhUimXJj8t9pzYw",
+  "Reference": "H6C-WXWKSUeDLtNpGOeSMg/Acp9wV0yhUimXJj8t9pzYw",
+  "Created": "2024-05-29T03:01:17.9260695Z",
+  "Updated": "2024-05-29T03:01:17.9260695Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.4.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,1073 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="836,6040" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Web</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.Activities.System.Text</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.GSuite.Activities.Drive.Enums</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.GSuite.Drive.Models</x:String>
+      <x:String>UiPath.GSuite.Activities.Sheets.Enums</x:String>
+      <x:String>UiPath.GSuite.Activities.Models</x:String>
+      <x:String>UiPath.GSuite.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.GSuite.Activities.Sheets</x:String>
+      <x:String>UiPath.GSuite.Activities.Contracts</x:String>
+      <x:String>UiPath.GSuite.Activities.Enums</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.UIAutomationNext.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Triggers</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.Activities.System.Arrays</x:String>
+      <x:String>UiPath.GSuite.Sheets.Enums</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Collections.Specialized</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xml.ReaderWriter</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="846.4,5975.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Int32" Name="IntResponseStatusUF" />
+      <Variable x:TypeArguments="x:String" Name="strResponseContentUF" />
+      <Variable x:TypeArguments="x:String" Name="ResponseContent" />
+      <Variable x:TypeArguments="x:Int32" Name="IntResponseStatusCidade" />
+      <Variable x:TypeArguments="x:String" Name="strResponseContentCidade" />
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+      <Variable x:TypeArguments="x:String" Name="dataCodigoMunicipio" />
+      <Variable x:TypeArguments="x:String" Name="dataPopulacaoSenso" />
+      <Variable x:TypeArguments="x:String" Name="dataSalarioMedio" />
+      <Variable x:TypeArguments="x:String" Name="dataMatriculaEnsino" />
+      <Variable x:TypeArguments="x:String" Name="dataPibPerCapita" />
+      <Variable x:TypeArguments="x:String" Name="dataMortalidadeInfantil" />
+      <Variable x:TypeArguments="x:String" Name="dataAreaUnidadeTerritorial" />
+      <Variable x:TypeArguments="x:String" Name="dataAreaUrbanizada" />
+      <Variable x:TypeArguments="x:Int32" Name="intPopulacaoSenso" />
+      <Variable x:TypeArguments="x:String" Name="classificacao" />
+      <Variable x:TypeArguments="x:Int32" Name="rowIndex" />
+      <Variable x:TypeArguments="x:String" Name="cellValue" />
+      <Variable x:TypeArguments="ue:IChartRef" Name="ChartVar" />
+      <Variable x:TypeArguments="ui:UiElement" Name="outputElement">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">NApplicationCard_4</x:String>
+            <x:String x:Key="SourcePropertyName">OutUiElement</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+      <Variable x:TypeArguments="x:Int32" Name="index">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">ForEach`1_5</x:String>
+            <x:String x:Key="SourcePropertyName">CurrentIndex</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+      <Variable x:TypeArguments="x:Int32" Name="index_1">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">ForEach`1_1</x:String>
+            <x:String x:Key="SourcePropertyName">CurrentIndex</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+      <Variable x:TypeArguments="upr:ILocalResource" Name="responseAttachment">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">HttpClient_1</x:String>
+            <x:String x:Key="SourcePropertyName">ResponseAttachment</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+      <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="headers">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">HttpClient_1</x:String>
+            <x:String x:Key="SourcePropertyName">ResponseHeaders</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" sap2010:Annotation.AnnotationText="URL para acessar o json do Ibge com as siglas dos estados" AuthenticationType="None" BodyFormat="application/xml" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="https://servicodados.ibge.gov.br/api/v1/localidades/estados" sap:VirtualizedContainerService.HintSize="784,163.2" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="GET" ResponseAttachment="[responseAttachment]" ResponseHeaders="[headers]" Result="[strResponseContentUF]" StatusCode="[IntResponseStatusUF]" TimeoutMS="6000">
+      <ui:HttpClient.Attachments>
+        <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+      </ui:HttpClient.Attachments>
+      <ui:HttpClient.Cookies>
+        <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+      </ui:HttpClient.Cookies>
+      <ui:HttpClient.Headers>
+        <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+      </ui:HttpClient.Headers>
+      <ui:HttpClient.Parameters>
+        <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+      </ui:HttpClient.Parameters>
+      <ui:HttpClient.UrlSegments>
+        <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+      </ui:HttpClient.UrlSegments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:HttpClient>
+    <If Condition="[IntResponseStatusUF &gt;= 200 AND IntResponseStatusUF &lt;= 300]" sap:VirtualizedContainerService.HintSize="784,5723.2" sap2010:WorkflowViewState.IdRef="If_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <If.Then>
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="750.4,5459.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="njl:JArray" Name="joArrResponseContentUF" />
+            <Variable x:TypeArguments="s:String[]" Name="arrCidades" />
+            <Variable x:TypeArguments="x:String" Name="strEscolhaUF" />
+            <Variable x:TypeArguments="x:String" Name="strEscolhaCidade" />
+            <Variable x:TypeArguments="njl:JArray" Name="joArrResponseContentCidade" />
+            <Variable x:TypeArguments="s:String[]" Name="dictEstados" />
+            <Variable x:TypeArguments="s:String[]" Name="arrMunicipios" />
+            <Variable x:TypeArguments="sd:DataTable" Name="intCodigoMunicipio" />
+            <Variable x:TypeArguments="s:String[]" Name="strCodigoMunicipio" />
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:DeserializeJsonArray DisplayName="Deserialize JSON Array" sap:VirtualizedContainerService.HintSize="688,92" sap2010:WorkflowViewState.IdRef="DeserializeJsonArray_1" JsonString="[strResponseContentUF]">
+            <ui:DeserializeJsonArray.JsonArray>
+              <OutArgument x:TypeArguments="njl:JArray">
+                <VisualBasicReference x:TypeArguments="njl:JArray" ExpressionText="joArrResponseContentUF" sap2010:WorkflowViewState.IdRef="VisualBasicReference`1_1" />
+              </OutArgument>
+            </ui:DeserializeJsonArray.JsonArray>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:DeserializeJsonArray>
+          <If sap2010:Annotation.AnnotationText="verificar se o array &quot;arrCidades'&quot; já está preenchido, caso não preenche com os valores encontrados" Condition="[IsNothing(arrCidades)]" sap:VirtualizedContainerService.HintSize="688,148.8" sap2010:WorkflowViewState.IdRef="If_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <If.Then>
+              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,191.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_1">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="s:String[]">[arrCidades]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="s:String[]">[{"Todos"}]</InArgument>
+                  </Assign.Value>
+                </Assign>
+              </Sequence>
+            </If.Then>
+            <If.Else>
+              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,102.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </Sequence>
+            </If.Else>
+          </If>
+          <ui:ForEach x:TypeArguments="njl:JToken" CurrentIndex="[index_1]" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="688,388.8" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[joArrResponseContentUF]">
+            <ui:ForEach.Body>
+              <ActivityAction x:TypeArguments="njl:JToken">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="njl:JToken" Name="currentItem" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,191.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_2">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="s:String[]">[arrCidades]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="s:String[]">[arrCidades.Concat({currentItem("sigla").ToString}).ToArray]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </ActivityAction>
+            </ui:ForEach.Body>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:ForEach>
+          <ui:InputDialog OptionsString="{x:Null}" sap2010:Annotation.AnnotationText="janela para selecionar o estado que será escolhido" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="688,358.4" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Por favor, selecione o estado abaixo:" Options="[arrCidades]" Title="Escolha o Estado">
+            <ui:InputDialog.Result>
+              <OutArgument x:TypeArguments="x:String">[strEscolhaUF]</OutArgument>
+            </ui:InputDialog.Result>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:InputDialog>
+          <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Add Queue Item" FolderPath="REF_check_point_RPA" sap:VirtualizedContainerService.HintSize="688,226.4" sap2010:WorkflowViewState.IdRef="AddQueueItem_3" Priority="Normal" QueueType="REF_check_point_RPA" Reference="[strEscolhaUF.ToString()]">
+            <ui:AddQueueItem.ItemInformation>
+              <InArgument x:TypeArguments="x:String" x:Key="consulta_estado">[strEscolhaUF]</InArgument>
+            </ui:AddQueueItem.ItemInformation>
+          </ui:AddQueueItem>
+          <ui:ForEach x:TypeArguments="njl:JToken" sap2010:Annotation.AnnotationText="faz a varredura no json para idenficar qual é o ID do estado de acordo com a sigla selecionada acima, busca a lista de cidades com o ID selecionado e gera a lista para a escolha de qual cidade deseja fazer o filtro no site do Ibge" CurrentIndex="[index]" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="688,212.8" sap2010:WorkflowViewState.IdRef="ForEach`1_5" Values="[joArrResponseContentUF.Children()]">
+            <ui:ForEach.Body>
+              <ActivityAction x:TypeArguments="njl:JToken">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="njl:JToken" Name="currentItem" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="688,1348" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <If Condition="[currentItem(&quot;sigla&quot;).ToString = strEscolhaUF]" sap:VirtualizedContainerService.HintSize="625.6,1261.6" sap2010:WorkflowViewState.IdRef="If_9">
+                    <If.Then>
+                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="592,997.6" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:String" Name="estadoId" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign sap:VirtualizedContainerService.HintSize="529.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_7">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[estadoId]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[currentItem("id").ToString]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" sap2010:Annotation.AnnotationText="URL com a lista das cidades de acordo com o ID do estado" AuthenticationType="None" BodyFormat="application/xml" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="[&quot;https://servicodados.ibge.gov.br/api/v1/localidades/estados/&quot; + estadoId + &quot;/municipios&quot;]" sap:VirtualizedContainerService.HintSize="529.6,163.2" sap2010:WorkflowViewState.IdRef="HttpClient_2" Method="GET" Result="[strResponseContentCidade]" StatusCode="[IntResponseStatusCidade]" TimeoutMS="6000">
+                          <ui:HttpClient.Attachments>
+                            <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                          </ui:HttpClient.Attachments>
+                          <ui:HttpClient.Cookies>
+                            <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                          </ui:HttpClient.Cookies>
+                          <ui:HttpClient.Headers>
+                            <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                          </ui:HttpClient.Headers>
+                          <ui:HttpClient.Parameters>
+                            <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                          </ui:HttpClient.Parameters>
+                          <ui:HttpClient.UrlSegments>
+                            <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                          </ui:HttpClient.UrlSegments>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:HttpClient>
+                        <ui:DeserializeJsonArray DisplayName="Deserialize JSON Array" sap:VirtualizedContainerService.HintSize="529.6,92" sap2010:WorkflowViewState.IdRef="DeserializeJsonArray_6" JsonArray="[joArrResponseContentCidade]" JsonString="[strResponseContentCidade]" />
+                        <ui:ForEach x:TypeArguments="njl:JToken" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="cria a lista de cidades selecionada acima" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="529.6,100.8" sap2010:WorkflowViewState.IdRef="ForEach`1_7" Values="[joArrResponseContentCidade]">
+                          <ui:ForEach.Body>
+                            <ActivityAction x:TypeArguments="njl:JToken">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="njl:JToken" Name="currentItem" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,191.2" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_10">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="s:String[]">[arrCidades]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="s:String[]">[arrCidades.Concat({currentItem("nome").ToString}).ToArray]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                              </Sequence>
+                            </ActivityAction>
+                          </ui:ForEach.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:ForEach>
+                        <Assign sap:VirtualizedContainerService.HintSize="529.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_8">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="s:String[]">[arrMunicipios]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="s:String[]">[{"Todos"}]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <ui:ForEach x:TypeArguments="njl:JToken" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="529.6,220" sap2010:WorkflowViewState.IdRef="ForEach`1_6" Values="[joArrResponseContentCidade]">
+                          <ui:ForEach.Body>
+                            <ActivityAction x:TypeArguments="njl:JToken">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="njl:JToken" Name="currentItem" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,191.2" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_9">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="s:String[]">[arrMunicipios]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="s:String[]">[arrMunicipios.Concat({currentItem("nome").ToString}).ToArray]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                              </Sequence>
+                            </ActivityAction>
+                          </ui:ForEach.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:ForEach>
+                        <ui:InputDialog OptionsString="{x:Null}" sap2010:Annotation.AnnotationText="janela para a seleção da cidade que fará o filtro no site do Ibge" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="529.6,108" sap2010:WorkflowViewState.IdRef="InputDialog_4" IsPassword="False" Label="Por favor, selecione o distrito abaixo:" Options="[arrMunicipios]" Title="Escolha o Distrito">
+                          <ui:InputDialog.Result>
+                            <OutArgument x:TypeArguments="x:String">[strEscolhaCidade]</OutArgument>
+                          </ui:InputDialog.Result>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:InputDialog>
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,102.4" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                </Sequence>
+              </ActivityAction>
+            </ui:ForEach.Body>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:ForEach>
+          <uix:NApplicationCard sap2010:Annotation.AnnotationText="Web Scrapping - Extrai os dados do site do IBGE" AttachMode="ByInstance" CloseMode="Never" ContinueOnError="True" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="688,100.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" OpenMode="IfNotOpen" OutUiElement="[outputElement]" ScopeGuid="453e2237-c577-407b-9bd1-d5852f6ff90a" Version="V2">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,3175.2" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" ContinueOnError="True" DisplayName="Type Into 'Cidades e Estados'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="DebuggerApi" ScopeIdentifier="453e2237-c577-407b-9bd1-d5852f6ff90a" Text="[strEscolhaCidade]" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://cidades.ibge.gov.br/brasil/sp/adamantina/panorama" CVScreenId="373d1537-9042-4ce0-8a78-b7101be11f8e" CvTextArea="878, 176, 172, 22" CvTextArgument="que voce procura?" CvType="Text" DesignTimeRectangle="845, 166, 985, 38" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='busca__input ng-untouched ng-pristine ng-valid' placeholder='O que você procura?' aaname='' /&gt;" Guid="c3381929-cebc-4a3a-88be-273d13161714" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAA90AAAAqCAYAAACusTi6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAtMSURBVHhe7d3Pb9vmHcfx/R+97ZZbrrvlr8itt916jWoIRglDMCpnXBYZSVCrm+ISTd0GGiIPaQwWUYK6iNoQLuxkgucANtBkS9KpiN1MMIQWqvDd85APZYqiftgW4zR9v4AvUFMPqedhdOiHz0Pyd8+fPxeKoiiKoiiKoiiKoiZfhG6KoiiKoiiKoiiKSqkI3RRFURRFURRFURSVUvWE7nfffZeiKIqiKIqiKIqiqGNUNGd3Q7f+AAAAAAAAHE80eBO6AQAAAACYIEI3AAAAAAApIXQDAAAAAJASQjcAAAAAACkhdAMAAAAAkBJCNwAAAAAAKSF0AwAAAACQEkI3AAAAAODN0v5R6ms1yV27JWfnrsnZq67k3H9Kfe8X0+DVIXQDAAAAAN4MnaZ8696Q09m/yltTyXX6g5p82zTtXwFC9xvo6YotmUxGMrYrTztmIwAAAAC8yToNWbpyNTFo99X0Z7LwzOyXsnRDd7sh3nJR7JlsEAJ1ZS3JzztS3dyVtmmGyWltlMTKZMX+2BE7mxFr0ZMmwfvY2nvbUov9lrOWLaXb29IybQAAAACclJbc+ag3cJ/5qCZ3/tOUH17qeiZ33FtyZjoSvGduyZ19s3uKUgvdrZ2KH/oyKgBaF4riXHelds+V8scquEwHocW6sspM7AS1NhyxpvNSfmjWSjTrUp5T539xnWB4TI2VvGSyOSmUyuLe88RTv2XnouX/jvPLj00rAAAAACfi0W05FYbp7DWZ/teABLT/nZz/80Hw/v3SjvkgPemE7r1VKUypYG1dluqTpPnslmzfCJZAW06dQIjXX6ct7b4LRC2pLajf+fSSbJktAAAAAF61n6Xyt4MgfXb1R7N9gP0Nebt7z3dZll6a7SlJJXRvfaKX4FqyNDSJtMQr6XY5qTwxm0ZobrlSnA2X9+oZdEe8RlsaX6gAP+dKw7QT9V/unGrTs+2AP2uZyYv7vdkQ6jRl63ZJbMt8x1RWcvNl8V6YzwfYvV0IxvGd2RDz+EZOfV6Q6p7ZoLQbnpTnc5LVFyf0d03npHDdEzWcRH3t/WX6N2X7Z9NAO2L/A+tSUvvYXzSk/WRVShcsyepjqMrOFsXdij9pwJxjp+5/b/26LZa/siEjpQ3TRJn0OAf+22nfu5JX++RXIv/qGyXV3hZXbWo/qR78frq/DfX72XDFmc93+++ftwVX+oacIOhPSZ09AAAAACfjkZwLQ/R7rtwbYzV1veJ0Q/rb30RD1eSlELrr4ujANCDw9tha8oNd7sbo5bnBvcoqAM6VguW9azVxF/MqnNli2/HvO0ro3hVvwVKBy1KhsKqOr77jblkKMzqEqdCWFPJCe1Up6L59mnSVYUuW9HL6i1X1DQF/Gbg+RzMFKd/VY/Gker1gtjmyHruvoNt+2pbisu6bGvv1otiXqpHxHaP/viB05xbUcVXQ7TtGxlJhOromwZzjxZqsL6rvVWNxVmpSW7kp6+biQhrjPFrozsvNNVdsFabzCxWprlWl8mX4m9uV6kV9caIkFdPH2vLloB+zFRn+y9T7qnbj/NYBAAAApOO/NTljAvRbH27IT2bzUA9udUP3GT1Dl6LJh24TfJIDaEzH84NeZqE2fIl5xwTXuZt994C3vi6qUBUPPocP3cFxVDiLP8FuvyZFHcA+9Ib0MbLMOH5VZTO4sFD82uytx2Ilj0We3fTPnRU9d2F7q9QXUqOO138tCN3+CoXN2DT0vvpM96FnfOYcq2Nnk56SntI4jxa6dT/jFw0i4v1THi/r1QmDVy/4s/ufqjbquM7D4WcWAAAAQIqiofujTbNxhF916H7o+CGnJ/gMZILeqJlCc8xucI3qqGPoUHms0N2U1XnVfn5V/VecCdRTjtTNliSt+zr0ZlVgNRsMf6n9VFG8sOvDxqKsL+rvUsEzDIJmNcCg9oHj97/7b/G+CslmS1SwhF6Nr5uTzTkedHtAKuM8RugeedEhxuwXXSrf1Xkqq5f0qgJbKjuHOioAAACASetsyjth6J69OyL3BJ64n3VD99nVMe4rPYZfRegeGrQSA/ZhQ7fpx9Aacd9uy/NnlLOfxGZv9Qx9JPANH8vB5+GMdfzvZBPof3iMxQGtTCgufBn+IM05ziUvwU5nnCOOOyR0jwrzfcyx+kN3S+qOCtxWUWpj3SsPAAAAIF0/yuK8Cd1TV2X6kdk8SOffcv79sP01OT/mM8aOavKhO4Xl5aMCnFdSx5hE6L5YDu5jTqzt7j3ZgwSz2pHZWz/w9c5+jxpLfIZ1ZHvfJPo/InT3BdrDnuOYI41zRLshoTtxxtoXPEitvGBLLvo+eVN9+71clULCigYAAAAAJ+d/39wwIVrVzLD3b8fe5z1/X34wn6Rl8qH7KA9SG/Ge4+GB7PAz3cHTxKPHM4Fz1L3lo4T3b9/XR2mJ96E6Zuw+73Asg2Z045+PF0Yn0X9zjJJn/o4ZNNM9InRPdpwj2n1XkZzq4/ihuxU8BE6F6PyiK7WH29J42ZSmrnvBswL69vODfUm8hPvAAQAAAJyQTkMWIu/ffmvmhpx/0JCfIv/f/tPejixciQTuqaty7sEv5tP0pBC6zYzvJF8ZNvT+YLOEe+zQbe5x7gluqr1+Anr03usjeSyVnDqOXk5ulpv3PZl9xL3Lffc6j7g3OjCJ/pvQPXS5eMI93QNCdzrjDPuRHLrDh+qNHbobrtjqs9zft82GiLVRM+QAAAAAXisvNuSPM5HgberUrCOnpvu3+zXzD6mkfNtoKqFb9laloGe7rctSfZL0Qua2PP7c9kON5dRHz86aAJv49HIVjnS46w1/4cPDilKLLyswT86OB7fdL/WDwlR/FtdH92cI/6nXKkx6fmhLuqCggvms+n79Oqr4bKnpWzbah/C+8NmybA94t7V2/P6b0K2CdWktdoTw6eVWwtPLB4XulMYZBuu+cN55Kjd1f9RnY4fucDn657FHx3Wa5sJMwn7PalL+uCy1EfeeAwAAADgBzUeS+1NCuI7WtCN/yEX+Tjl4pxO6ldZOReysDi7BO5DLKzUVRM17l63g3lmrVJPdeCAbYPery364PnhPt3nnc9YWOyH8tR46/nu9M7OR9stFyWctsS/El5dr4VJj/R3F7jubq8uOFC+ofaJBbhg/yGXF8l+XNSCQPtPvjFafJ72/OuGVWeE7ysN3YQf9KklhdinyZL7j9j8I3dZcXvUj8p7uexW5POw93QNDt5LGOFt1cfS5ncpJybTx7lakOKfO+QX7cMvLw9eURY91z5WSOlZ2xvJ/b/H96o5qr/s46N53AAAAACfsF/lhZ0Nyl67J6fcOwvWpubKccx+JPy+8vynnXlHwTi10+9oN8VTQtaMPqFKhNz/vSHVzV4ZMaCbaXSurAGaONaVDliNeox0sVU4Ifz3tdRB+vyjuVtMEsaQlym1p3I/uE/ZXz2yOO3+8K9WLwb6F20MeXfaiLpUFFXD9CxOqpnMq6HqihpOo3fDEUeE5qwOr6Ze9qNqbzwPH6b+Z6dazzztVKenv8o+hz3NJqvq89RgjdGtpjPOFJ+X5XLdN1spLcWVLmvr1cervQz1ITR3L/z79XT3HCp5NEN8vuPiTFfv20FEDAAAAeN31Be9hD2A7unRD9ysyKHTjMA5CNwAAAAD8JsSC9zsPzPYJInTDIHQDAAAA+A3a35HcXxw5feUrqY+7wPkQCN0wCN0AAAAAMGmEbhiEbgAAAACYNEI3DEI3AAAAAEzaGxG6AQAAAAB4HRG6AQAAAABICaEbAAAAAICUELoBAAAAAEgJoRsAAAAAgJQQugEAAAAASEli6A6DN0VRFEVRFEVRFEVRR69ozu4J3RRFURRFURRFURRFTaqey/8B4WPegwDcRtQAAAAASUVORK5CYII=" InformativeScreenshot="213abd08d15a5709821526920a4f78a4.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='cidades.ibge.gov.br/brasil/sp/adamantina' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V3" Visibility="Interactive" />
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="453e2237-c577-407b-9bd1-d5852f6ff90a" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://cidades.ibge.gov.br/brasil/panorama" DesignTimeRectangle="835, 216, 1010, 87" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl class='busca__auto-completar__resultado__item' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl class='busca__auto-completar__resultado__item' tag='A' type='' aaname='                     Campinas                     [3509502]                     SP                                                                                     Município                                       ' check:innerText='Campinas [3509502] SP&amp;#xD;&amp;#xA;Município' /&gt;" Guid="87c7fa73-0dd9-4f3c-a993-1340d5eef50d" ImageBase64="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" InformativeScreenshot="117d3fa0a425228becc040d6294f523a.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IBGE | Cidades@ | Brasil | Panorama' /&gt;" SearchSteps="Selector, Image" Version="V3" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NGetText ContinueOnError="True" DisplayName="Get Text 'Código do Município'" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="453e2237-c577-407b-9bd1-d5852f6ff90a" ScrapingMethod="TextAttribute" TextString="[dataCodigoMunicipio]" Version="V3">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="https://cidades.ibge.gov.br/brasil/sp/campinas/panorama" ContentHash="uOcFT6r4yEWhc3L4j4_6IA" DesignTimeRectangle="352, 348, 189, 24" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='dados' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='dados' tag='P' type='' class='topo__valor' /&gt;" Guid="049b0040-a6a2-4147-a310-47c5ac59f7df" InformativeScreenshot="89df5069fcd993e692577f7db9f051cd.png" Reference="H6C-WXWKSUeDLtNpGOeSMg/CaDZszMhNkeNadW7EN-whg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IBGE | Cidades@ | São Paulo | Campinas | Panorama' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="352, 324, 189, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H3' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H3' type='' class='topo__titulo desktop' aaname='                     Código do Município                 ' check:innerText='Código do Município' /&gt;" Guid="fb491582-60a0-4fe6-9983-dd51b8193a8f" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                  </uix:NGetText>
+                  <uix:NGetText ContinueOnError="True" DisplayName="Get Text 'População no ultimo senso'" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="453e2237-c577-407b-9bd1-d5852f6ff90a" ScrapingMethod="TextAttribute" TextString="[dataPopulacaoSenso]" Version="V3">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="https://cidades.ibge.gov.br/brasil/sp/campinas/panorama" DesignTimeRectangle="721, 557, 91, 27" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' /&gt;" Guid="5686b188-3a81-4d2e-9bc6-a297e1848af8" InformativeScreenshot="ed0c0246182d921127731220520f1dd5.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IBGE | Cidades@ | São Paulo | Campinas | Panorama' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="389, 551, 325, 40" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='lista__nome' tableRow='2' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='lista__nome' type='' tag='TD' aaname='                                          População no último censo                                                           ' check:innerText='População no último censo [2022]' /&gt;" Guid="7332d225-1ac3-4daa-abc9-2d717910fe02" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                  </uix:NGetText>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Abrir Janela Trabalho e Rendimento" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="453e2237-c577-407b-9bd1-d5852f6ff90a" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://cidades.ibge.gov.br/brasil/pa/acara/panorama" CVScreenId="801e0b66-4bc3-499e-a1ec-248916f04a3d" CvElementArea="856, 616, 25, 31" CvType="ArrowButton" DesignTimeRectangle="839, 604, 58, 53" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='lista__seta' tableRow='6' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='lista__seta' type='' tag='TH' aaname='' /&gt;" Guid="8fbc4387-a9ac-46ce-b55c-3ad8352eff1a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAD4AAAA5CAYAAABuxJj8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFESURBVGhD7ds9SkNREIbh7CO7yQpcg5sQC61T2giiiChooxuQFFZaXQIS8CciiIZsY2SEFxFPGoPzhcx88Fb3NA/n3vL25vO5ZYr1np8ebdVrAf4a63VdZ5lieV/11sN1jhU8S6zgWWIFzxIreJZYwbPECp4lVvAssYKHNpvaycGZbVyMbdp6/o+xeLij94+tv3X01eA8Fs/C4den32gFnsXf+P3IBts/4ZF4pvnGhXimgXsiPNPBPQGeaeFeMJ7p4d4i/NVD+/wSsdWAv45tZ/gb3t+7sUnr/BIxPXwRejiy21nj/JIxLTwY7TEdXID2mAYuQnssHi5EeywcfnmoQ3ss/sZf7mxzV4P2mOYbBx+M9pgG7n2821sw2mM6uChW8CyxgmeJFTxLrOBZYgXPEit4lljBs8Tywls/rKxzLOmNm30CgI1mAxOmVoYAAAAASUVORK5CYII=" InformativeScreenshot="55eba18cf4ddc9fd604e0db19de1cb46.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IBGE | Cidades@ | Pará | Acará | Panorama' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V3" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="801e0b66-4bc3-499e-a1ec-248916f04a3d" CvTextArea="393, 622, 240, 17" CvTextArgument="TRABALHO E RENDIMENTO" CvType="Text" DesignTimeRectangle="389, 604, 450, 53" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='lista__titulo' tableRow='6' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='lista__titulo' type='' tag='TH' aaname='Trabalho e Rendimento' check:innerText='TRABALHO E RENDIMENTO' /&gt;" Guid="1b651ad8-5695-4ae0-ba48-a87270043548" ImageBase64="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" SearchSteps="FuzzySelector, Image, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NGetText ContinueOnError="True" DisplayName="Get Text 'Salário médio'" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="453e2237-c577-407b-9bd1-d5852f6ff90a" ScrapingMethod="TextAttribute" TextString="[dataSalarioMedio]" Version="V3">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="https://cidades.ibge.gov.br/brasil/sp/bauru/panorama" DesignTimeRectangle="721, 476, 28, 27" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='7' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' /&gt;" Guid="813feaa6-43dc-4a7c-a9eb-13d68f1e0711" InformativeScreenshot="1a9e77f413af7fa0cc519121131ab70a.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IBGE | Cidades@ | São Paulo | Bauru | Panorama' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="755, 480, 134, 22" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='unidade' tableRow='7' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='unidade' type='' tag='SPAN' aaname='salários mínimos  ' check:innerText='salários mínimos' /&gt;" Guid="bb9f8a2f-745f-4932-8616-2b45bc4104af" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIoAAAAaCAYAAABo4cQnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAATcSURBVGhD7Zh3TzQ5DMbvQ9N77wKJLqpEByEQiCpEEU303ovofI28+kXyKBuyuzN7dxyc8sej3Zk4tmM/cZz56/PzU3l4JIMnikcoeKJ4hIInikcoeKJ4hIInikcoeKJ4hMI/SpTl5WVVWFiobm9vv4zd3d2p0tJS1dnZqd7e3r6M/1bMzc2p3Nxctb+/7xz/v+DbiDI1NaWJcnl5+WXMBcg0NDSkE+Ea/wm4v79X1dXVamxsTH18fDhlXCAWo6Ojkeb81/gWolxcXKiKigq1u7sb8z4Rnp+fVUNDgxoeHnaO/wSQ7I6OjsgVkjltbW2/qrJ+W0Xx+N0IiEIZXFpaUiUlJSo9PV1lZGSosrIytbW1pcdhPyWzqKgoGK+rq1PX19eBMpsoYefU1taq09NT1djYqOV6enrU09OTfs+uFdn393c1Pz+vbaSlpamsrCzV29urZUWG/319fbpvEJmmpibdI4mMCexzfOCnqbe/v18dHR2pmpoa7Tdobm6O2QRUBWDqwufNzU1VWVkZrNn20Z7Hf3xGDtv4gC+rq6tqcXEx8Cs7O1uNj4/HVCLytrGxoXMl9mw/o8bEhYAoOzs7qqCgQC+Wso8S/ktPgUP0CxDn9fVVHycEsaWlJXAceZMoYecUFxfrZE1MTGgSsTBgE4UgsdiVlRX18PCgyYW++vr6IBGDg4Na19nZmbbJLxvg5eUl0GMC+wSPo5GGFL2Tk5M64AR0enpa9yKQhk3U3d0d9BYuojCvvLxcH7P4tLe3p9eHXyLnIgpJ7urq0usHJBtdzEXX4+OjjiVkWVtbC+ZiMycnJ/Dz6upKtba26n5QNmTUmLgQEAWDKI/CMoyxEJmDDpMoLrjmECR2tClnEwV5ds3MzEyMHIvGpgSPoJvJTAbsZ2Zm6iog70gKFaG9vT1GD8nAJyGlnXB0kVwzkWBkZCThPP5DVBIt77a3tzVR0SnvSDJ9m8REnqkWpp/oQR8bj2f0R4mJCwFRYB87AQM4Z5a3eEDOJIb97IJrTn5+vq42ppxNFHY7R5h9DRU5ksEz+th1BOf4+DhpcMQf2X3Atm3KJiOKrQugJxlRqAKmr/HWi6z4RQyxh11TRuREZ9SYuBDTzLIQrnp5eXm6xMNIIQxlitIHmeQclbM0HlFSmSOwk8V5He97BQEA8syRxDO7G+KzO015Ey77f5co9lrCEMV8BmGIcnh4qGOCXVMG2DajxMSFGKIIpGnk7JPmiQ9llP6DgwM9jpwdGPM5lTk8C+xkxQucyElFscc49wkmPtjjwGXftm3KJkp4vLX8W0TBDvawa8qInF2lQJiYuOAkioDgY5D+gL7CDhwVJ17SU5ljytnJkh5Fzl2B3aPYQA8NryuYwGXftm3K/iSiSI9i9x92j2IjWUxcCIiyvr6uBgYG1Pn5uXYAB0kMHbM4xNX25uZGG+JIgZUsxpX0VOaILwB5O1kyP9Gth6+5CwsLOli8m52d1UcptzrRY8Jl32VbZH8SUQA3SmKS6NYTNSYuBEQ5OTnRVyjOMPoIjGNArlDs3Kqqqpi7Ovd3bgfxkp7KHIErWewa87sCfY/9jYIgEGBsAq609DfxGrjfThTAjY1NbcYZwsh41Ji4kPDo8fAQeKJ4hIInikcoeKJ4hIInikcoeKJ4hMCn+gMzvbJZn3bXDQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                  </uix:NGetText>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Abrir Janela Educação" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="453e2237-c577-407b-9bd1-d5852f6ff90a" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://cidades.ibge.gov.br/brasil/pa/acara/panorama" CVScreenId="801e0b66-4bc3-499e-a1ec-248916f04a3d" CvElementArea="856, 668, 25, 31" CvType="ArrowButton" DesignTimeRectangle="839, 657, 58, 53" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='lista__seta' tableRow='15' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='lista__seta' type='' tag='TH' aaname='' /&gt;" Guid="6fcb528b-ca0c-4494-b495-1af57d86085a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAD4AAAA5CAYAAABuxJj8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAE2SURBVGhD7dsxSgNRFIVh95HdZAWuwU2IhdYpbQRRRBRiEzcgKay0GgIiWEQE0TDbuOEKP0F8qQbvEe/94VTzmo83U85O3/eWaZQX3nWdZRrVq55lVPAso4JnGRU8y6jgWUYFzzIqeJZRwbOMCh661dIuT69t92Zhy9bzXxzFwx19cmGj/fOvjaexeAqH311t0Ao8xd/409zGB9/hkXjSfONCPGngPhGedHCfAE9auC8YT3q4bxv+9qV9fsDob8DfFnY4+QkfHd/bc+v8gJEevg09mdvDqnF+4EgLD0b7SAcXoH2kgYvQPoqHC9E+CofPznRoH8Xf+Ouj7R1p0D7SfOPgg9E+0sB9nx/2Hoz2kQ4uGhU8y6jgWUYFzzIqeJZRwbOMCp5lVPAso7zw1g8r/3mU9MbN1tErbL1LK+L7AAAAAElFTkSuQmCC" InformativeScreenshot="e223ffc2765bc0c3f4886c5b503632eb.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IBGE | Cidades@ | Pará | Acará | Panorama' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V3" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="801e0b66-4bc3-499e-a1ec-248916f04a3d" CvTextArea="394, 671, 100, 25" CvTextArgument="EDUCACAO" CvType="Text" DesignTimeRectangle="389, 657, 450, 53" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='lista__titulo' tableRow='15' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='lista__titulo' type='' tag='TH' aaname='Educação' check:innerText='EDUCAÇÃO' /&gt;" Guid="e8c08715-76d5-4903-a739-fe3a707c9285" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAcYAAAA5CAYAAACs0YtRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAZzSURBVHhe7d09T1tnGMbxfA8mJjbGTEyZMjJlYmJk62QZ4QglJUIIISoRBTW1nFIZlBrVsiwUg4UMFKMiHwjFSoLcRKaJxde4e47P231ebAwxlKb/4ackPs9zfMzAlft5872LiwsBAAA2ghEAAOWeYRgCAABsVIwAACgEIwAACsEIAIBCMAIAoBCMAAAoBCMAAArBCACAQjACAKAQjAAAKAQjAAAKwQgAgEIwAgCgEIwAACgEIwAACsEIAIBCMAIAoBCM/fTJkMRsWgYSL2Xkp32pfbFe25NH5r8ndkNtAQB3EsHYR4W0HYpD0/afA5NpGZ4y/0zmJNOM7wMAuFsIxr55L9/PvJT7q6ftfzd2i/LACsXJFUlUm6G2AIC7imAEAEDpMRjfy9wzs/qxhgdjjKy/99rW1rOxbYZm1mRi/dCedwvcO9hnfCd6Pbfs3icrc/Xo9cbRniQWVmRo0mmXTMuw+X6JghH7fu6Qp932kmHOL2eSW8/LA3d41PI4Iw+Wy5I9+hhtf7YtD912JreCjNeS2k5Zxucy/rObhp5kZTxvSD3m2QEAN+vWgtEzaYbbUUvd+2uCsSmb2W7vtyaLZ7q9qXUg48lgu7Gtz8E2rg97MvY42FYbTBuRPpHP/7Qk1VAbW1NyP2aCbcOmC5L7FNcXAHBTrh6MMxuy2fgodaXxt9/WD4YVSf1hX68d7svc8or/C38qJ1n1C/+6wdgovfb6WXN5E2aFWG2cSWV326wgMzL4fF/O1X3advJOnzUZXXD6Lu1F27VOJPXUuW4a/qEk2cMzqb81JGNVkFPm5zsK9VE/p8GFNRlp981Iygi3Mz/zbypA289+KJV39rNP6P+EzJalFuoLALg5Vw/GZ91/UfshFx32rKoAHPr5OKbPVYLx1A+upPn6n8E+8T5L5rnTx/wcFS9Y1+RFI9j2fCvnXDOfdflAGupaR0clue/0Gd85ltQT+++Dr0KVZcuQ76yFOVbbpFnVvlPX2tfNn/escz2Rlu+qoesAgBtzq8EYGMZ8siGVSJ8rBKOxIcNOn7ghzVjNfRlz3n84eyIXjYqMOvd4mG+otmaALrnvGTMc20F11a2KX7fnLTdfOfOSUwUptFTbg6IMOu87YIauvofHq2ydZ41rAwDouz7MMQYDsGswXpypSignWScsrhOM52oY9VGpwxxhiF8FmlXYgfWa+lzz21L32p541Z4O8O5UBbtQse/lhVuw6tPPrudnA+plZyjW9KJDeAIA+u6WgzE+5K4TjJf1iVJVYDIvOSeU/SpPV4ZmZevc+7IK2aMqWC/sVIWqq9qenl0HY6/PAAD4an1ZfHOuhgm7B6MOWDOcIn1usGJs2keztfvoxTZxgXaNirGSdVeY6sU28WFMxQgAd9ftzjGqCmpgxt/G0HswqkUyap4usrglRr245r1HR97Wio/ywl2xGrMwJ0otpunC2xbCHCMA3Fm3GIwt2fzF37IR2Pi+W/BfD4dA61gSbvU2VZRN73W1kCe0/SOqIYvzTtuu/C0YOqxHfu1Q1bmqBT/ounG3jwRWpZo/p/CKWlalAsC/pi9Dqd33MTr7CufVZvbHBcnp02aaZsh5FVdaRlf3pPDW6rcnqUX/xJmhUGVYyaq9kdPWSTfuXsB9WVzNy+jzih3i+jSa+bJUQ89fK/pDm15gW9+K4QavaWS5LJnqaXsfY/ZNWRJLWUn8bj+Hf5JOWia2g/euNwxJeNtK/FN22McIAHdTHxbfBOfJdKUVa9oMhw/h+19IY6cgwyqIImZLUgkf3WZVVnMxbV1OdVvP+8OowW0ZDj3Eq+YUL3um9rCvrv7C2zIc/gIfPR/KyTcAcBfdTjBaX78091pSb06lERMcrvN3hzK3nLW/qsnp2z5jNX/cpV9LaltFGZ3R55/aZ6VOFE/kPPDsnecL/XlMdyuH469jWQw9U/us1KUNyVmrWNVcYMe5Tr2Qxt3K0daSenU7elbqpZ8ZAHBTegzG/7ums7q0l4U4AID/MoKxJ2ZVWi3bB4o/K0qB4U0A+GYRjD2o75YktV6SUeebNsa2gt8OAgD4dhCMPfBWkCbTcn+pHF0EBAD4ZhCMAAAoBCMAAArBCACAQjACAKAQjAAAKAQjAAAKwQgAgEIwAgCgEIwAACgEIwAACsEIAIBCMAIAoBCMAAAoBCMAAArBCACAcs8wDAEAADYqRgAAPBfyD+iMkPYeBKIPAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NGetText ContinueOnError="True" DisplayName="Get Text 'Matrículas no ensino fundamental'" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="453e2237-c577-407b-9bd1-d5852f6ff90a" ScrapingMethod="TextAttribute" TextString="[dataMatriculaEnsino]" Version="V3">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="https://cidades.ibge.gov.br/brasil/sp/bauru/panorama" DesignTimeRectangle="721, 586, 63, 27" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='22' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' /&gt;" Guid="0ad3cfc0-0a18-4914-b9ca-2dd1489663ca" InformativeScreenshot="d8a2864d1b63c4d431dd1faca18c0ed7.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IBGE | Cidades@ | São Paulo | Bauru | Panorama' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="389, 580, 326, 40" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='lista__nome' tableRow='22' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='lista__nome' type='' tag='TD' aaname='                                          Matrículas no ensino fundamental                                                           ' check:innerText='Matrículas no ensino fundamental [2023]' /&gt;" Guid="d94dcb5e-98f8-4788-9f83-ef4904a4e928" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                  </uix:NGetText>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Abrir Janela Economia" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="453e2237-c577-407b-9bd1-d5852f6ff90a" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://cidades.ibge.gov.br/brasil/pa/acara/panorama" CVScreenId="6511b8c2-4d70-4157-ae4d-ba43d66e0305" CvElementArea="856, 612, 25, 31" CvType="ArrowButton" DesignTimeRectangle="839, 601, 58, 53" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='lista__seta' tableRow='34' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='lista__seta' type='' tag='TH' aaname='' /&gt;" Guid="85efc861-f526-4214-a714-a08af596107b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAD4AAAA5CAYAAABuxJj8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFXSURBVGhD7duxSsNwFMVh30N8AZ/AV3BwdnUSVycFBx0EV8FFsENdOpWiUCgiiDg5BAeHDlYITZu8xpUrnEFJl4r3iOce+G35Dx9JhgxZaZrGlMJ04UVRmFJYPuoqYQlXCUu4SljCVcISrhKWcJWwhKuEJVwlLOGRvU8r27se2cng0ap53XrNb4WFwx290xna6sGVrR127Kj/EIrHwuH7vftPNIrGY+Hwu5exrR93aXiM8o4z8RgF7rHwGA3uMfAYFe5F4zE63FuEP715srpuP7Ns2J+Av05K2zzvf4F725e3Vlaz1jPLhtHhi9BbFwN7K6vWMz8Jo8Kj0R5GgzPQHkaBs9AeFg5noj0sHL7bHdHQHhYOfx5PbOOsR0F7GOUdBz4a7WEUuDedzUM+Q7+H0eCssISrhCVcJSzhKmEJVwlLuEpYwlXCEq4Spgtv+2HlP4eJ3nGzDy67bmhMTarSAAAAAElFTkSuQmCC" InformativeScreenshot="c8bb38fe8c311fcf2a1c1a2a477a5adf.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IBGE | Cidades@ | Pará | Acará | Panorama' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V3" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="6511b8c2-4d70-4157-ae4d-ba43d66e0305" CvTextArea="394, 618, 102, 17" CvTextArgument="ECONOMIA" CvType="Text" DesignTimeRectangle="389, 601, 450, 53" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='lista__titulo' tableRow='34' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='lista__titulo' type='' tag='TH' aaname='Economia' check:innerText='ECONOMIA' /&gt;" Guid="1253c702-180a-4cf2-94b5-92c1966f0db7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAcYAAAA5CAYAAACs0YtRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAXkSURBVHhe7dzLT1xlHMZx/g+jmKgxUaPRaEyMdeNlozEmdeElcaELF16iK3uLNtZqNfbmhaTKpQitSgURLYRWKqWtLTCAXKRcClRa5t94needeU9+czjQmcw5ceF38Qkz5/zOeYdZzDPvbery+bwDAABFBCMAAEZdLpdzAACgiB4jAAAGwQgAgEEwAgBgEIwAABgEIwAABsEIAIBBMAIAYBCMAAAYBCMAAAbBCACAQTACAGAQjAAAGAQjAAAGwQgAgEEwAgBgEIwAABgEIwAABsEIAIBBMAIAYBCMAAAYFQXj4tVV9/ThTnfTe98m2tN9dt01k4vL7t3jp929H37na27e1uju39Pm3ikcuzS7WFZ7fmbBvdbS6+7e3RrdU49fb+1zI7FaOTY0HtXV72hyrYO5dTV6TTr/4N52/1ri52tpU5L+ZwntBrounLP3sMeDtbW8e7OtP6p5oPB+Jb0WAEB2MgnGzouT7q4PjibWyucnL0S1CrXbdzUn1onOxYMvHlJP7O9ws0tXy2o2C8Y02tz69c9uZfVaWU3S+1RNMP61sOwe2nssqtGXicaB0XV1AIDsVB2MTx084Xt8CptA50Otzt1X6iXesr3R98DOTs27/vFZ31vc8un3US9oYOJyFKChVnWixzqmc6pRbWgjHlISD+eNgrHWNuu3N/nAuqfQuzw3PR+dF/2fui7UqL6aYGwfGvPX6R5bPvvB1714pMetXru+rhYAkI2qg1F/bRDG7fzpjK/TB/xH3UN+eDCpzg4bqla9SFurx7o+BIxqw/kQMI/sO+6DVo8VxnaINikY02hT7Tz8cbFXd+T34eha0f10/JkvOv0wqB5XGowKv1caf/Pn9B4f7P3TP04KYABAdlINxrnlf9zj+zt8nUJryvTU4maurLhHS6Gm4UMNI8Zr7NCi7qv763gIGIVew6lL7tYdTf65eqQhyJKCMa0232ovhqvtzWlY9bmvunyo7u4a9IGmmkqDUb3oEKbbOgZ8GIZ72KFnAEC2ap5jvPP9o+70+KyvG7l8pdCjKn6432gI0NZuFLa2XYXGRCnIbEiNFu7z8jc9/vkdu1pcz/C0r0kKxrTabD4z6m7b2VwWrmEYVde0/JHz74vqKw1GzSUqVLWYSHO09nUocOPzmQCAbKQajPobAuHVppPr7mNVUmvbte3YkFLo2Xs939DtQyQpGNNqc2hqzvcmFWSaF9T5MIyq4dC+sb+jdioJRn2B0BcJHbdhG4alFbgK3lAPAMhOzYtvNFy6en3N1/0XPUa9Bg2fahhVx+pL2zcO9V0sq9F1abb5dvsp/1zzkApirVJVUKrnZwO4kmDc6H37dWTa90x1XEEf6gEA2Ul1jtHO4emvnifVSVrzfSH0xuaWokUxWpBzuK+4eMXWpNnmj+cnfAjrfr8MT/n5QAWp5gqrDcYQ4pt58sAJt7CS/L4DANKTajCq56ZN86pTaGguLqlOVGtXiMZXsOrxjVaI2tCTQ4UwDPWPlbY72Jo02wwBqh7dS6VhUA2jqrdXTTCGRTvh+EY0f9qbm4nuBQDIRs1DqWKDUotf9CGuWm2U15Bj2Cd4oPeCe6EQIoOTc7621j2F8WDUJn9t9te5IF6TVpsKwLC9QhSmYTN+NcEYFu3o2LNfdvnFROF9FRv2mnMM9wIAZKPqYExi57/Uw/qk51wUMHEKjLCgRWr5FZp46Ilq60vbNzarSaNN7WMM14RhVB2vJhjDoh1J2pZht3HYoV0AQDZSD8ZAKze3NnRHAaRej34rVXsAp2Nzj/rwV2/N/m6pfmP1jbZ+Nz6/VFYrmwWjhia1MjXcJ6lG0mjT7jUMw6g6Xmkw2vd1o438+qJhh6e1lSNeAwBIT0XBCADA/wXBCACAQTACAGAQjAAAGAQjAAAGwQgAgEEwAgBgEIwAABgEIwAABsEIAIBBMAIAYBCMAAAYBCMAAAbBCACAQTACAGAQjAAAGAQjAAAGwQgAgEEwAgBg1OVyOQcAAIroMQIAEMm7fwHhEY+DcpjDGQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NGetText ContinueOnError="True" DisplayName="Get Text 'PIB per capita [2021]'" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="453e2237-c577-407b-9bd1-d5852f6ff90a" ScrapingMethod="TextAttribute" TextString="[dataPibPerCapita]" Version="V3">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="https://cidades.ibge.gov.br/brasil/sp/campinas/panorama" DesignTimeRectangle="710, 381, 91, 27" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='35' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' /&gt;" Guid="b1c07a2f-803a-48ec-bc0d-b0197a4f94cc" InformativeScreenshot="783c8504fd5499da04868def7a207d8b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IBGE | Cidades@ | São Paulo | Campinas | Panorama' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="378, 375, 325, 39" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='lista__nome' tableRow='35' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='lista__nome' type='' tag='TD' aaname='                                          PIB per capita                                                           ' check:innerText='PIB per capita [2021]' /&gt;" Guid="d4af1850-ee40-4cc2-865b-e2b52208bc5a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAUkAAAArCAYAAAD1wXpNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAfBSURBVHhe7ZzZq01RHMcvUcgUQoYQkTwQGZOZFyFJEteUIkqKKOQFRV5Mocg8JpmnDPGAMmR27zWG+Dd++v7qt1tnWXudvd2be06+D5/uOXutvdbaZ5/1Ob817Fvx8uVLIYQQEoaSJISQCJQkIYREqPj165cQQggJQ0kSQkgESpIQQiJQkoQQEoGSJISQCJQkIYREoCQJISQCJUkIIREoSUIIiUBJEkJIBEqSEEIiUJKEEBKBkiSEkAiZJPnixQvp3LmzVFRUJLRr106WLVsmNTU1Sb7169fL8OHD5ePHj6nnNWzYUPr27SsHDhyQnz9/Juf+T3z//l1Wr14te/bsCabXhps3b0rTpk2Tz/vo0aN6/P79+zJ+/Hj9/HG8Z8+ecuLEiYJ7gNf79++XDh06aJ62bdvK9u3b5cePH0meL1++yObNm5M8jRs3lsrKSnn//n2Sx8B/UJk0aZJ+B/BdsON+G/G9cc8jpJTIJcmdO3fqa3Dw4EHp1KmTjBo1KpFimiTd8x4+fChz5syRRo0ayZkzZwrq+V/49OmTjBs3TtasWZMcO3v2rMyePbsg398AAeG+4K8dw2fevXt3FfOTJ0/0Pmzbtk1F5d4DvMYxpCEPBNuqVSvZvXt3kmf58uUyYMAAuXDhguZ58OCBDB06VCZOnKgCRR7IFufih3TYsGF/SNLA9wTfF0qSlDK5JGlRiXHu3Dlp2bKlXLx4Ud+nSdI/78OHDzJkyBBZtGhRwfH/FUhl4cKFMnPmzGB6HkKSBF+/fi14j2h28uTJiZjtPdrhRpdbtmyRgQMHSnV1dZIPWDrA/UdkeefOHX3//PlzGTt2rJw/f17vPSVJyplaSfLp06faOex4Vkla51ixYkXBcRcIA5HWxo0bVcQYliEaOn36dEE+DAX37t2bDP/wF0NG6+hW15EjR/R4ixYtpHXr1hoBueUYmD5YvHixDiNRXrNmzWTXrl2a9ubNG42CcQxpyINr+PbtW3J+lna7coB8RowYofkMRHMmuUOHDkmfPn2SNLy+fft2UpZPmiRDoK0m5levXmk7MQR380B83bp1SwQYIlYnJUnKnVpJEhEEhlTWObJIEhENhnMdO3aMdjx0XkhowYIFGpm8fv1aVq5cKU2aNNGhnuXbunWrDgmPHTsmGMZirhMShBSRbh1xwoQJMnr0aK0TZbnzbAbyYvqgX79+ek1o/+XLl+Xx48ea/u7dO9m0aZM8evRIxQihoO59+/YlZWRpd0gOrrBcjh8/LocPH9ZzUP/06dMLIjufmLBcqqqqpH///nov8D7tvLR774K51d69e8vbt2//SKMkSbnzV5KEIG7duqUymTJlShJJpUnSjZIARIR5Mis/BITRq1cvjXDsGOa8xowZI7NmzdJIEZ0SnRNDQstjQ1csUkDI1hERgUFYli8E5gUh/Xv37gXTfVAXpOXOJWZpdx5J+ly/fl0/07QfmKySRKTbo0cPefbsmb7/W0nihwDXmyY6SpKUO7kk6YoOkREm8RG9Wb40SboLN+hU69at02gPiz92rg+EAQHZsNlw60CHRkQKcbh5EB1hiAhRWUeMDe0Nv/1Z8OWWpd3WJlcOfjlpFJNgsXSAH4P27dtr1G3H0s6zexiSJO79jBkzZOTIkamRLSVJyp1ckjTZpUnEl0xaB4NAsH0oJqQ0aaAORECICjHcdcXtYh0zT0dERBhrE8pbsmSJlu3W5bYzS7tDbQqdhykBTCNgkcvmQYE7Z+lTTJLXrl1TQSL6dkWOyLRLly6ZJYnRA+ZnMWTHD5+b5kJJknKnVnOSPviyu5KJnYe8aZ0HQBhYbfVXUt06igkB5OmIfvtdbFg5d+7cgqG0L7cs7Q61yS8HYEiMhaiTJ08mUxrFrjmWfuPGDRUkyvUj3djCDe6TG62jLfPmzdP9rthS5Ob3oSRJuVMvkkQHxbwhIiRsB3LTDAgjy5wk5hrdfXw+eToiZJQ2Jwl5NG/evEA+1h5fknUxJ4mhLIax7jGANmKxKK8ksSLetWvXoCABpD5t2rTgFiB3UQaCXLp0aSZBAkqSlDv/RJLunCQ61qpVq3QzOVam/TIMyKFBgwY65+WuEkMQGDJaPpSBoSieDEE+1AGR2NMseToi8oZWtwG2DLVp00bWrl0rnz9/1rT58+frEyyuyLK0O9QmvMY8KuqBICEj7CPFEB1Py6BOXBdE58vaJSRJfOYoB3Kz+2BA5halXr16Va/R30xu9wny3LBhg5Z/5cqVP8oKzUtSkqTc+SeSdOfvAB6Jw57F0DYcA7KZOnVqwX5DRGjYoOzmQ8fFAgTKtPIxt7Zjxw5Nz9sR8XgdHrOzfZKo2/Zd4i8e1bPjaBse0fMlWazdoTZBMFjwQX7UcffuXX2sD7sHcAzgyZZLly7J4MGDc0kS983K8PHnN9FOtBdpdo0mUWu3X4bhfg4GJUnKnUySrA/Q4UKdrtSp73aHJFmqUJKkHKAk65hSkCS2RZ06dUqjN/9xxFIAkSmG+diUP2jQIEqSlDSUZB1TCpLEENqGwMWmSOoDv42UJCllKMk6plzbTQgJU7KSJISQUoCSJISQCJQkIYREoCQJISQCJUkIIREoSUIIiUBJEkJIBEqSEEIiUJKEEBKBkiSEkAgVNdVVQgghJESV/AYw2dX7TiWNUQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                  </uix:NGetText>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Abrir Janela Saúde" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="453e2237-c577-407b-9bd1-d5852f6ff90a" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://cidades.ibge.gov.br/brasil/pa/acara/panorama" CVScreenId="f377c38b-2c5d-436b-8b85-fcbf8adc6046" CvElementArea="856, 666, 25, 31" CvType="ArrowButton" DesignTimeRectangle="839, 654, 58, 53" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='lista__seta' tableRow='45' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='lista__seta' type='' tag='TH' aaname='' /&gt;" Guid="5bb33f4a-5bb6-413f-9da5-62a696542faa" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAD4AAAA5CAYAAABuxJj8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFXSURBVGhD7duxSsNwFMVh30N8AZ/AV3BwdnUSVycFBx0EV8FFsENdOpWiUCgiiDg5BAeHDlYITZu8xpUrnEFJl4r3iOce+G35Dx9JhgxZaZrGlMJ04UVRmFJYPuoqYQlXCUu4SljCVcISrhKWcJWwhKuEJVwlLOGRvU8r27se2cng0ap53XrNb4WFwx290xna6sGVrR127Kj/EIrHwuH7vftPNIrGY+Hwu5exrR93aXiM8o4z8RgF7rHwGA3uMfAYFe5F4zE63FuEP715srpuP7Ns2J+Av05K2zzvf4F725e3Vlaz1jPLhtHhi9BbFwN7K6vWMz8Jo8Kj0R5GgzPQHkaBs9AeFg5noj0sHL7bHdHQHhYOfx5PbOOsR0F7GOUdBz4a7WEUuDedzUM+Q7+H0eCssISrhCVcJSzhKmEJVwlLuEpYwlXCEq4Spgtv+2HlP4eJ3nGzDy67bmhMTarSAAAAAElFTkSuQmCC" InformativeScreenshot="8422f3101daa2442f6e60279f70d3462.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IBGE | Cidades@ | Pará | Acará | Panorama' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V3" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="f377c38b-2c5d-436b-8b85-fcbf8adc6046" CvTextArea="394, 668, 61, 21" CvTextArgument="SAUDE" CvType="Text" DesignTimeRectangle="389, 654, 450, 53" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='lista__titulo' tableRow='45' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='lista__titulo' type='' tag='TH' aaname='Saúde' check:innerText='SAÚDE' /&gt;" Guid="ad842c47-abd1-4e1a-b267-754a6cb6bf83" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAcYAAAA5CAYAAACs0YtRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAUkSURBVHhe7d3bbxRVHMDx/h9GMVFTb9HEqBij0UTlRU1IfPJBYzQxxhijDwYql1YIIDHiBXggtGxL26UU2BLE0hZKCqVQyvZir7JtKd1e/o2f+zvljL+dHbpDyiZN9vvweWDmzAw8fXNmzlkqlpeXBQAArCCMAAAYFel0WgAAwApmjAAAGIQRAACDMAIAYBBGAAAMwggAgEEYAQAwCCMAAAZhBADAIIwAABiEEQAAgzACAGAQRgAADMIIAIBBGAEAMAgjAAAGYQQAwFiXYRzO3JHXf07KI1uOyqt7m+X6RCZyHAAAD9u6C2N2cUm+auhwUXzn11YXyahxAACUwroL475zvbKhqk6+SLTLzHw2cgwAAKXCN0YAAIzYYczMzcsPLZfkhV3H3WvOR7fWyit7mqWq9bIM/jtbMP7K6G15trrejVXbTl8uGKN2n70SjGm+OlRw/vO6v925yp31cnFo0h2bvpuV9/84E1znPbn9mGw+lJJk77AsLC4V3Ms+K0zvp/cNXwMAKC+xwpiZy8qHB1ORQdFA1nbfKrgmHKH3Dpxy91lt3FrDaG0+1CZTd+bz7kUYAQDFxAqjhk8DqAH5+Mg5Nxs8e3PUzSA/+POMjE7nL5Cx4XrrlxYXtSe2HZO/Bsbyxqm1hnHTb6ekf3LaLdJJ9KTd8/z99DulLubx9/LPqtyRkNa+Efkn9/f2JmbvytJS/rMBAOUnVhiDoJg4raY9PS5PbU+4mB7u6nerS/X6b5u6CsauNYzhmZ6d3T7+Y50LuD/3oP8OAED5iRXG3y/ccEFRn+VCpd8bo8Z5+j1Rx764q1EGpmZcEPXPujcxPLt82GFUTVcHgxnu1tbu4DhhBAAUEyuMdsO9C8uOhFSneiIDqTM2/Z6o4z463CZz2YUgVBtyM7iT14bzxpcijN0jU/J0brye15D7V6T2WWF6zt4DAFCeYoVR9Y1n5N17r0S9Z6rrJdk7lPdtTr8j6vdEG5uByWl5aXejO/ZNY2fe+FKEUb8ZvrynqeA8YQQAFBM7jEq3QKT6R/MWuOh3vNPXR4Ix+upSj9vFNtmFRbdoR4/rFo8R82s2pQijjtPxel6v98f9s6IW34TvAQAoTw8URk8DebDzhouihubL+gvu+PjMnLyx/4Q7dj/h7R1xw/h8TYP0jt12x4qF0a6i/ant/5lgEEYTWQAArFhhnJ1fKNjKYF9X+lmZfj/U74h6bDWf1p53s0i9piV3jY9YVW62aZ+jWyjevjc71eBqePX4amEcy43xq2B1ZayukPXnCCMAoJhYYdTwbdyXlJpUj3TmgqL/28X3ya4gaLoKVYOm3w/1zxpH3VNoX1XqNT5Y+r1RvzvqvfVXczbubXbHdQa65WS3WzyjwdTFO3pcfZe8GETThtHvY9T7H2jvC2Ktvj7eEQRYrfYqlX2MAAAVO4w+NmGv5YJ5a2rGbcPwK1ejtmUov41DHbl0MzjekIuo/pybPxemEdSZoB9vwxhFgx31I+T2tW1YeOYJAChPscLYNTQhnxw9L5U7E0FI9DdT9Zdv/JYNu3cwaiO/soti/FYOf+7aeMbFzD/jsapaeXP/CTcLtOPU/cL4XE2D+3t2DE5Ezv4IIwCgmFhhBACgXBBGAAAMwggAgEEYAQAwCCMAAAZhBADAIIwAABiEEQAAgzACAGAQRgAADMIIAIBBGAEAMAgjAAAGYQQAwCCMAAAYhBEAAIMwAgBgEEYAAAzCCACAUZFOpwUAAKxgxggAQGBZ/gMHRfj6cNUUvgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NGetText ContinueOnError="True" DisplayName="Get Text 'Mortalidade Infantil'" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="453e2237-c577-407b-9bd1-d5852f6ff90a" ScrapingMethod="TextAttribute" TextString="[dataMortalidadeInfantil]" Version="V3">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="https://cidades.ibge.gov.br/brasil/sp/aguas-de-lindoia/panorama" CVScreenId="d5b64626-1f55-4fb9-b5c5-e78714b7197d" CvTextArea="701, 742, 42, 21" CvType="AnyWordGroup" DesignTimeRectangle="704, 738, 41, 27" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='46' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' /&gt;" Guid="d5ad3c53-601e-4499-bd37-358a9643e3d9" InformativeScreenshot="3ffb573a57376f487ecccb19b56fd464.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IBGE | Cidades@ | São Paulo | Águas de Lindóia | Panorama' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="d5b64626-1f55-4fb9-b5c5-e78714b7197d" CvTextArea="378, 756, 199, 20" CvTextArgument="Mortalidade Infantil [2022]" CvType="Text" DesignTimeRectangle="373, 731, 325, 67" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='lista__nome' tableRow='46' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='lista__nome' type='' tag='TD' aaname='                                          Mortalidade Infantil                                                           ' check:innerText='Mortalidade Infantil [2022]' /&gt;" Guid="b7db5ff3-35dd-435a-8891-01cce5b639c7" ImageBase64="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" SearchSteps="FuzzySelector, Image, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                  </uix:NGetText>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Abrir Janela Meio Ambiente" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="453e2237-c577-407b-9bd1-d5852f6ff90a" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://cidades.ibge.gov.br/brasil/pa/acara/panorama" CVScreenId="f377c38b-2c5d-436b-8b85-fcbf8adc6046" CvElementArea="856, 718, 26, 31" CvType="ArrowButton" DesignTimeRectangle="839, 706, 58, 53" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='lista__seta' tableRow='52' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='lista__seta' type='' tag='TH' aaname='' /&gt;" Guid="1b5915e9-2f39-453a-947f-3eb8fc114f7e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAD4AAAA5CAYAAABuxJj8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFYSURBVGhD7dsxSgNRFIXh7EPcgCtwCxbWtlZia6VgoYVgK9gIpohNqhAUAkEEESuLwcIihRFCJpnZxpWrnEKZNBHvEc898Hfzig/mFVNMq65rUwpLuEpYqygKUwrLV10lLOEqYQlXCUu4SljCVcISrhKWcJWwhKuEJTyyt2lpu1dDO+4/WDmvGp/5rbBwuKO32wNb2b+01YO2HfbuQ/FYOHyve/eBRtF4LBx++zyytaMODY9R7jgTj1HgHguP0eAeA49R4V40HqPDvUX4k+tHq6rmM8uG/Qn4y3hiG2e9L3Bv6+LGJuWs8cyyYXT4IvTmed9eJ2XjmZ+EUeHRaA+jwRloD6PAWWgPC4cz0R4WDt/pDGloDwuHP43Gtn7apaA9jHLHgY9GexgF7k1n85DP0O9hNDgrLOEqYQlXCUu4SljCVcISrhKWcJWwhKuE6cKbflj5z33O7B3j+G5o/iaNVgAAAABJRU5ErkJggg==" InformativeScreenshot="c32a43b6e3069e49800aa76965ebfdac.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IBGE | Cidades@ | Pará | Acará | Panorama' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V3" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="f377c38b-2c5d-436b-8b85-fcbf8adc6046" CvTextArea="394, 725, 146, 17" CvTextArgument="MEIO AMBIENTE" CvType="Text" DesignTimeRectangle="389, 706, 450, 53" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='lista__titulo' tableRow='52' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='lista__titulo' type='' tag='TH' aaname='Meio Ambiente' check:innerText='MEIO AMBIENTE' /&gt;" Guid="0a8de0a1-2f08-40a3-a2bc-1f080ad9a827" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAcYAAAA5CAYAAACs0YtRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAdsSURBVHhe7dzpbxVVGMdx/g+jmKhxD4nRkBiXF66JGo0YEzUxBt8ZNb4ThChCEEFlUYGgpWUpiCyVfRVkh8ItS6FlKVAoy79xnN/UZ3jm3BnuvU2bUPm++KTt3OecO/c2md99zszcETdu3AgAAKAfwQgAgEMwAgDgjKhUKgEAAPSjYwQAwCEYAQBwCEYAAByCEQAAh2AEAMAhGAEAcAhGAAAcghEAAIdgBADAIRgBAHAIRgAAHIIRAACHYAQAwCEYAQBwCEYAAByCEQAAh2AEAMAhGAEAcAhGAAAcghEAAKeuYOy53Bdem7Mm3PXl76mnpi4LJ85fqqrTNj1mdRqjsUVzxKas3VNV58ebq9euh+X7jodXZ60K909sTuvuGd8URk9bHqZv2B8uXMnX17Kn81x45JtF2X5MWL2rsG7Z3mNZjdj+xrTd12mcPRbPYR6dtDiMmbc2bO3oCtev35zL19czjzw5tTWc7On/3/i6kV8tDIt3V7I5jO2vjav1fzL2v9EYjS2qEb/fADAcDCgYdZBdc+hkVV3r3o5w97imrM4HW60Dbj3B2JeE4idLtuaeI/bs9D/C0TMXsjG1xEH20sxV4XxvdbjGYTRm7l+ht+9qrqboNdYbaHKvwmtPR2F9vfOUBaO8+NPK0H3xcjaPEIwAkNdwMCoU9fPz1u25GnU6ny7dlqvxwebneDnp9g5396QHVVNU58fLtPX7slB8OOnyZmzcH/adOpcefHXQ13Z589e23Lgy/rme/2FFePDrReG+Cc1hw5FTVbUWMiPHL0z34bGky9Nz+xrrPq1G9T4YfFDN39Gevm6N0Xtp9T5wfX2tecypnt60q47rjH0AMXEw6v/YlYSnzaf5bez4lTuz7apRrX63YHx/wfrscRN/eACA213DwaifOoi/kATR2UtXsprO5CD49PfL03B5d/66rNYCKp6jLLjK6mx+bX/82yVh54kzuXHq8t74pS19XMH85/7juceLbK6cDg9MbElfz9zth9PXpPFx6IuFzKjJS8Lo7/qXixf83Z6r+XHTgXT76z+vCU9MWZr+XhZofrsPF/+ay+rLtsesTu+bOmn9rv3XhxKriYPRjxf/XHGoit/3sQs3VT0OAMNNw8GorlDnEePOSkGkQFLd2OZNaa0/yJcFXqysTku31ol+3LI5dy7O+KXccUl3Ez8e0/lE1Y6avDQcOXMhDUT9rSBREPtaCwiFwGet/Z3xe0mH1Hf1Wvq4OqO3kk5Vzz+pbXfaUarGB5cPGduu7k7n/hTQ2u5Duaj+VttjVqd9npcEv5Zq9fcXy3dk7x/BCAB5DQejDvoKBH+g9MuoChsdIPW7DzY/R0xd5o5j3VV1fry6M6svOkCL5tBcqvko2Yei8DTqMHU+UbW2fGnBWtRx+pBp3nU0/WDgL0KyZVR1ii3/VLL98MHlQyamC4jeTvajs6e3sL7eeXw4WZ32WeddP/it//+mEF7f3v+hZjCDMVY2JwDczhoORh0cLaQsuGyZUwdcLU8ORTDaAVx8SHg+GP3YIup2FW6qtQP+ke6ebAlUQe+D1YfM3s6z6bKrQlRhqsdtGfXDpo1hS0dXw8GouXTu9cDp84X19c5TFowKKP/+vDNvbfphgGAEgLwBBaMuOtFSoTokdUq2zGlXdNYKxvjiGwWrrjiN6/z4we4YtdSqOr8krGVR64bjW1LikLFlVwWoAkZdp8KtaefR3H6UBZpdNHM8eQ5dRGTLnP6qWF9fax5zrvfmeV+rs33W+6FlVG3T/0tLuLO3HMrV2Nh4DqkVjPHFN/5CIAAYLgYUjHY+TX/rwGohYfcA1gpGvz1WVjeY5xhPX+gNz/x3MUoZCzkbE4eMnVPVPOvaO9MPCuo21XXWE4x+u16LglzbH0rG2YVFZfVl22NW50Ov4+zF7OIhXZAzZ8vBqpqiOaRWMPpuFQCGqwEFo7bpp/5+Zdbq9EBry6h6bCiC0V+Vqk51WxI+flwjV6VaqKn2VrQsahfXxCFjX2agjlOdkq9vNBh9p6pxGn+r+rLtMauLQ292Eob2AeK5GSsKa4x/LoIRwJ1gwMFotzrYQdMvATa6lCpFdX68DMZ9jOrO/P2WLbsruf042HU+u23DOkCNi0NGYaYgtOf0HWYjS6l6Pt0faEup6kDV0cb1teYxRfcxxqGnm/z9+1VUY/xz1QpG7mME8H8w4GDUPYwWIOK/Sq1WMBaxeX1dHIyD8c03vvMsui1D7DYOsXsVi0LGn/f0IVpPMBYZqm++KQo9nV/0XfNgBGMRv98AMBwMOBjFzi36ZVQZqmAUdUNthzurvitVgThz84GaHYo/D+nvGfR8sNmtHEUhYxchabtfdm00GPU69F2p2491ZbVxfT3zSL3BqNekK1OLxnn+uQhGAHeCuoIRAIA7BcEIAIBDMAIA4BCMAAA4BCMAAA7BCACAQzACAOAQjAAAOAQjAAAOwQgAgEMwAgDgEIwAADgEIwAADsEIAIBDMAIA4BCMAAA4BCMAAA7BCACAQzACAOCMqFQqAQAASCX8C0UE83ShDHrfAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NGetText ContinueOnError="True" DisplayName="Get Text 'Área urbanizada [2019]'" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="453e2237-c577-407b-9bd1-d5852f6ff90a" ScrapingMethod="TextAttribute" TextString="[dataAreaUrbanizada]" Version="V3">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="https://cidades.ibge.gov.br/brasil/sp/campinas/panorama" DesignTimeRectangle="719, 489, 63, 27" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='53' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' /&gt;" Guid="6e82c622-1a5f-406d-b021-a221470e7c37" InformativeScreenshot="a26e6e3e76f64449d621688957a36905.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IBGE | Cidades@ | São Paulo | Campinas | Panorama' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="388, 483, 325, 40" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='lista__nome' tableRow='53' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='lista__nome' type='' tag='TD' aaname='                                          Área urbanizada                                                           ' check:innerText='Área urbanizada [2019]' /&gt;" Guid="a0fafcfe-48ac-48ba-808c-db52f40a7e66" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                  </uix:NGetText>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Abrir Janela Território" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="453e2237-c577-407b-9bd1-d5852f6ff90a" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://cidades.ibge.gov.br/brasil/pa/acara/panorama" CVScreenId="f377c38b-2c5d-436b-8b85-fcbf8adc6046" CvElementArea="855, 771, 28, 32" CvType="ArrowButton" DesignTimeRectangle="839, 759, 58, 53" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='lista__seta' tableRow='67' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='lista__seta' type='' tag='TH' aaname='' /&gt;" Guid="a3c24c4c-8913-4286-bcd9-be25d9d5ef05" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAD4AAAA5CAYAAABuxJj8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFSSURBVGhD7dcxSgNRFIXh7EPcgCtwCxbWtlZia6VgoYVgK9gIpohNqhAUhCCCiJXFYGGRwghDJpnZxpWrnEKZNBHvEc498Hfzig/mFa/TNI0phSVcJaxTFIUpheWvrhKWcJWwhKuEJVwlLOEqYQlXCUu4SljCVcISHtn7tLLdq5EdDx+tmtet3/xVWDjc0dvdW1vZv7TVg64dDh5C8Vg4fK9//4lG0XgsHH73Mra1ox4Nj1HuOBOPUeAeC4/R4B4Dj1HhXjQeo8O9RfiT6yer6/Yzy4b9C/jrpLSNs8E3uLd1cWNlNWs9s2wYHb4IvXk+tLeyaj3zmzAqPBrtYTQ4A+1hFDgL7WHhcCbaw8LhO70RDe1h4fDn8cTWT/sUtIdR7jjw0WgPo8C96Wwe8gz9GUaDs8ISrhKWcJWwhKuEJVwlLOEqYQlXCUu4SljCVfqa2Qca1oCwO+8f2AAAAABJRU5ErkJggg==" InformativeScreenshot="f551d31adc6510146ced3b5ce78968d8.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IBGE | Cidades@ | Pará | Acará | Panorama' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V3" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="f377c38b-2c5d-436b-8b85-fcbf8adc6046" CvTextArea="393, 773, 108, 21" CvTextArgument="TERRITORIO" CvType="Text" DesignTimeRectangle="389, 759, 450, 53" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='lista__titulo' tableRow='67' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='lista__titulo' type='' tag='TH' aaname='Território' check:innerText='TERRITÓRIO' /&gt;" Guid="23f3b0dd-730a-4e7e-8b50-83e6bccb13a4" ImageBase64="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" SearchSteps="FuzzySelector, Image, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NGetText ContinueOnError="True" DisplayName="Get Text 'Área da Unidade Territorial'" sap:VirtualizedContainerService.HintSize="353.6,182.4" sap2010:WorkflowViewState.IdRef="NGetText_8" ScopeIdentifier="453e2237-c577-407b-9bd1-d5852f6ff90a" ScrapingMethod="TextAttribute" TextString="[dataAreaUnidadeTerritorial]" Version="V3">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="https://cidades.ibge.gov.br/brasil/sp/campinas/panorama" DesignTimeRectangle="714, 446, 74, 27" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='68' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' /&gt;" Guid="5ac6939c-f153-41e8-be48-c82f691a57c6" InformativeScreenshot="5e6c99458924f0d32893d8729b315de7.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IBGE | Cidades@ | São Paulo | Campinas | Panorama' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="383, 440, 325, 39" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='lista__nome' tableRow='68' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='lista__nome' type='' tag='TD' aaname='                                          Área da unidade territorial                                                           ' check:innerText='Área da unidade territorial [2022]' /&gt;" Guid="2922aa7a-a882-448d-bad9-34787c427c34" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                  </uix:NGetText>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Edge" ContentHash="Z0QlTtEh3EK3rkKch6iUAg" IconBase64="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" InformativeScreenshot="7ce3ef5b9a168852dfa58c528abeccf4.jpg" Reference="H6C-WXWKSUeDLtNpGOeSMg/kHT514yznECmHLeyLZe6xg" Selector="&lt;html app='msedge.exe' title='cidades.ibge.gov.br/brasil/sp/adamantina' /&gt;" Title="cidades.ibge.gov.br/brasil/sp/adamantina" Url="https://cidades.ibge.gov.br/brasil/panorama" />
+            </uix:NApplicationCard.TargetApp>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </uix:NApplicationCard>
+          <Sequence sap2010:Annotation.AnnotationText="Cria a variável da classificação das Cidades: Pequena, Média ou Grande" sap:VirtualizedContainerService.HintSize="688,88" sap2010:WorkflowViewState.IdRef="Sequence_31">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="cleanedDataPopulacaoSenso" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="529.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_19">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[cleanedDataPopulacaoSenso]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[dataPopulacaoSenso.Replace(".", "")]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="529.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_14">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[intPopulacaoSenso]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">[Convert.ToInt32(cleanedDataPopulacaoSenso)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="529.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_15">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[classificacao]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </InArgument>
+              </Assign.Value>
+            </Assign>
+            <If Condition="[intPopulacaoSenso &gt;= 500000]" sap:VirtualizedContainerService.HintSize="529.6,453.6" sap2010:WorkflowViewState.IdRef="If_10">
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,191.2" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_16">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[classificacao]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">Grande</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,102.4" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+            <ui:IfElseIfV2 Condition="[intPopulacaoSenso &gt;= 100000 And intPopulacaoSenso &lt; 500000]" DisplayName="Else if" sap:VirtualizedContainerService.HintSize="529.6,592" sap2010:WorkflowViewState.IdRef="IfElseIfV2_1">
+              <ui:IfElseIfV2.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="496,191.2" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_18">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[classificacao]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">Pequena</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </ui:IfElseIfV2.Else>
+              <ui:IfElseIfV2.ElseIfs>
+                <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True" />
+              </ui:IfElseIfV2.ElseIfs>
+              <ui:IfElseIfV2.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,191.2" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_17">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[classificacao]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">Média</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </ui:IfElseIfV2.Then>
+            </ui:IfElseIfV2>
+          </Sequence>
+          <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="688,3756.8" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+            <ueab:ExcelProcessScopeX.Body>
+              <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="654.4,3647.2" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:String" Name="strExcelPath" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap2010:Annotation.AnnotationText="variável para iniciar a verificação de linhas vazias no excel" sap:VirtualizedContainerService.HintSize="592,116.8" sap2010:WorkflowViewState.IdRef="Assign_11">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Int32">[rowIndex]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Int32">2</InArgument>
+                    </Assign.Value>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Assign>
+                  <Assign sap2010:Annotation.AnnotationText="variável vazia para ser preenchida com o valor da célula se houver" sap:VirtualizedContainerService.HintSize="592,116.8" sap2010:WorkflowViewState.IdRef="Assign_12">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[cellValue]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">
+                        <Literal x:TypeArguments="x:String" Value="" />
+                      </InArgument>
+                    </Assign.Value>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Assign>
+                  <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="DataSets" CacheStrategy="None" DisplayName="Get Asset" FolderPath="REF_check_point_RPA" sap:VirtualizedContainerService.HintSize="592,175.2" sap2010:WorkflowViewState.IdRef="GetRobotAsset_3">
+                    <ui:GetRobotAsset.Value>
+                      <OutArgument x:TypeArguments="x:String">[strExcelPath]</OutArgument>
+                    </ui:GetRobotAsset.Value>
+                  </ui:GetRobotAsset>
+                  <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" sap2010:Annotation.AnnotationText="executa o arquivo excel que está dentro da pasta &quot;dados_ibge&quot; no projeto" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="592,3152" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" TemplatePath="dados_ibge\dados_ibge_cidade.xlsx" UseTemplate="True" WorkbookPath="[strExcelPath]">
+                    <ueab:ExcelApplicationCard.Body>
+                      <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="558.4,2804.8" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="False" sap:VirtualizedContainerService.HintSize="496,56.8" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_2" Range="[Excel.Sheet(&quot;Municípios&quot;).Range(&quot;A:A&quot;)]" SaveAfterEachRow="False">
+                            <ueab:ExcelForEachRowX.Body>
+                              <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                                <ActivityAction.Argument1>
+                                  <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                                </ActivityAction.Argument1>
+                                <ActivityAction.Argument2>
+                                  <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                                </ActivityAction.Argument2>
+                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,888" sap2010:WorkflowViewState.IdRef="Sequence_45">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ueab:ReadCellValueX sap2010:Annotation.AnnotationText="faz a leitura da céula para verificar se está vazia" Cell="[Excel.Sheet(&quot;Municípios&quot;).Cell(&quot;A&quot; + rowIndex.ToString())]" DisplayName="Read Cell Value" GetFormattedText="False" sap:VirtualizedContainerService.HintSize="529.6,223.2" sap2010:WorkflowViewState.IdRef="ReadCellValueX_2">
+                                    <ueab:ReadCellValueX.SaveTo>
+                                      <OutArgument x:TypeArguments="x:String">[cellValue]</OutArgument>
+                                    </ueab:ReadCellValueX.SaveTo>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ueab:ReadCellValueX>
+                                  <If sap2010:Annotation.AnnotationText="condição para verificar se a variável &quot;cellValue&quot; está vazia. se estiver vazia será incrementado +1 no valor rowindex, caso não para o loop para iniciar o preenchimento com index selecionado" Condition="[Not String.IsNullOrEmpty(cellValue)]" sap:VirtualizedContainerService.HintSize="529.6,578.4" sap2010:WorkflowViewState.IdRef="If_12">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <If.Then>
+                                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,222.4" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <Assign sap2010:Annotation.AnnotationText="incrementa +1 caso a célula tenha algum valor preenchido" sap:VirtualizedContainerService.HintSize="433.6,136" sap2010:WorkflowViewState.IdRef="Assign_13">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="x:Int32">[rowIndex]</OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="x:Int32">[rowIndex + 1]</InArgument>
+                                          </Assign.Value>
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </Assign>
+                                      </Sequence>
+                                    </If.Then>
+                                    <If.Else>
+                                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,134.4" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ui:Break sap:VirtualizedContainerService.HintSize="353.6,48" sap2010:WorkflowViewState.IdRef="Break_1" />
+                                      </Sequence>
+                                    </If.Else>
+                                  </If>
+                                </Sequence>
+                              </ActivityAction>
+                            </ueab:ExcelForEachRowX.Body>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ueab:ExcelForEachRowX>
+                          <Sequence sap2010:Annotation.AnnotationText="Preenche os dados na planilha de excel com os valores das variáveis" sap:VirtualizedContainerService.HintSize="496,2481.6" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Add Queue Item" FolderPath="REF_check_point_RPA" sap:VirtualizedContainerService.HintSize="433.6,226.4" sap2010:WorkflowViewState.IdRef="AddQueueItem_1" Priority="Normal" QueueType="REF_check_point_RPA">
+                              <ui:AddQueueItem.ItemInformation>
+                                <InArgument x:TypeArguments="x:String" x:Key="Pequena, Média ou Grande ?">[classificacao.ToString()]</InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="Municipio">[strEscolhaCidade.ToString()]</InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="UF">[strEscolhaUF.ToString()]</InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="Cod Municipio">[dataCodigoMunicipio.ToString()]</InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="População no último censo">[intPopulacaoSenso.ToString]</InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="Salário médio mensal dos trabalhadores formais">[dataSalarioMedio.ToString()]</InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="Matrículas no ensino fundamental">[dataMatriculaEnsino.ToString()]</InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="PIB per capita">[dataPibPerCapita.ToString()]</InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="Mortalidade Infantil">[dataMortalidadeInfantil]</InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="Área urbanizada">[dataAreaUrbanizada]</InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="Área da unidade territorial">[dataAreaUnidadeTerritorial]</InArgument>
+                              </ui:AddQueueItem.ItemInformation>
+                            </ui:AddQueueItem>
+                            <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Municípios&quot;).Cell(&quot;A&quot; + rowIndex.ToString())]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="433.6,192" sap2010:WorkflowViewState.IdRef="WriteCellX_11" Value="[classificacao]" />
+                            <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Municípios&quot;).Cell(&quot;B&quot; + rowIndex.ToString())]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="433.6,192" sap2010:WorkflowViewState.IdRef="WriteCellX_1" Value="[strEscolhaCidade]" />
+                            <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Municípios&quot;).Cell(&quot;C&quot; + rowIndex.ToString())]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="433.6,192" sap2010:WorkflowViewState.IdRef="WriteCellX_2" Value="[strEscolhaUF]" />
+                            <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Municípios&quot;).Cell(&quot;D&quot; + rowIndex.ToString())]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="433.6,192" sap2010:WorkflowViewState.IdRef="WriteCellX_3" Value="[dataCodigoMunicipio]" />
+                            <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Municípios&quot;).Cell(&quot;E&quot; + rowIndex.ToString())]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="433.6,192" sap2010:WorkflowViewState.IdRef="WriteCellX_4" Value="[intPopulacaoSenso]" />
+                            <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Municípios&quot;).Cell(&quot;F&quot; + rowIndex.ToString())]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="433.6,192" sap2010:WorkflowViewState.IdRef="WriteCellX_5" Value="[dataSalarioMedio]" />
+                            <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Municípios&quot;).Cell(&quot;G&quot; + rowIndex.ToString())]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="433.6,192" sap2010:WorkflowViewState.IdRef="WriteCellX_6" Value="[dataMatriculaEnsino]" />
+                            <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Municípios&quot;).Cell(&quot;H&quot; + rowIndex.ToString())]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="433.6,192" sap2010:WorkflowViewState.IdRef="WriteCellX_7" Value="[dataPibPerCapita]" />
+                            <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Municípios&quot;).Cell(&quot;I&quot; + rowIndex.ToString())]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="433.6,192" sap2010:WorkflowViewState.IdRef="WriteCellX_8" Value="[dataMortalidadeInfantil]" />
+                            <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Municípios&quot;).Cell(&quot;J&quot; + rowIndex.ToString())]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="433.6,192" sap2010:WorkflowViewState.IdRef="WriteCellX_9" Value="[dataAreaUrbanizada]" />
+                            <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Municípios&quot;).Cell(&quot;K&quot; + rowIndex.ToString())]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="433.6,183.2" sap2010:WorkflowViewState.IdRef="WriteCellX_10" Value="[dataAreaUnidadeTerritorial]" />
+                          </Sequence>
+                          <Sequence sap2010:Annotation.AnnotationText="sequence para criar o pivot table" sap:VirtualizedContainerService.HintSize="496,88" sap2010:WorkflowViewState.IdRef="Sequence_43">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ueab:CreatePivotTableXv2 DestinationRange="[Excel.Sheet(&quot;PivoTable&quot;)]" DisplayName="Create Pivot Table" sap:VirtualizedContainerService.HintSize="433.6,547.2" sap2010:WorkflowViewState.IdRef="CreatePivotTableXv2_1" LayoutRowType="Compact" Range="[Excel.Sheet(&quot;Municípios&quot;)]" TableName="Pivo Table" ValuesMode="Columns">
+                              <ueab:CreatePivotTableXv2.Body>
+                                <ActivityAction>
+                                  <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_41">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ueab:PivotTableFieldX DisplayName="Pivot Field" FieldName="UF" Function="Sum" sap:VirtualizedContainerService.HintSize="382.4,95.2" sap2010:WorkflowViewState.IdRef="PivotTableFieldX_1" Type="Column" />
+                                    <ueab:PivotTableFieldX DisplayName="Pivot Field" FieldName="Municipio" Function="Sum" sap:VirtualizedContainerService.HintSize="382.4,95.2" sap2010:WorkflowViewState.IdRef="PivotTableFieldX_2" Type="Row" />
+                                    <ueab:PivotTableFieldX DisplayName="Pivot Field" FieldName="População no último censo" Function="Sum" sap:VirtualizedContainerService.HintSize="382.4,95.2" sap2010:WorkflowViewState.IdRef="PivotTableFieldX_4" Type="Value" />
+                                  </Sequence>
+                                </ActivityAction>
+                              </ueab:CreatePivotTableXv2.Body>
+                            </ueab:CreatePivotTableXv2>
+                          </Sequence>
+                          <ueab:InsertExcelChartX sap2010:Annotation.AnnotationText="cria o gráfico dinâmico com os dados do pivot table" ChartCategory="Column" ChartHeight="211" ChartType="xlColumnClustered" ChartWidth="355" DisplayName="Insert Chart" sap:VirtualizedContainerService.HintSize="496,92" sap2010:WorkflowViewState.IdRef="InsertExcelChartX_1" InsertIntoSheet="[Excel.Sheet(&quot;Grafico&quot;)]" InsertedChart="[ChartVar]" Left="60" Range="[Excel.Sheet(&quot;PivoTable&quot;).Range(&quot;A2:D4&quot;)]" Top="20">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ueab:InsertExcelChartX>
+                        </Sequence>
+                      </ActivityAction>
+                    </ueab:ExcelApplicationCard.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ueab:ExcelApplicationCard>
+                </Sequence>
+              </ActivityAction>
+            </ueab:ExcelProcessScopeX.Body>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ueab:ExcelProcessScopeX>
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,102.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
+      </If.Else>
+    </If>
+  </Sequence>
+</Activity>

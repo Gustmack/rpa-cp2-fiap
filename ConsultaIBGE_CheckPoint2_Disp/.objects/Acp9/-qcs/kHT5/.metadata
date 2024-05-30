@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge cidades.ibge.gov.brbrasilspadamantina",
+  "Type": "Screen",
+  "Id": "kHT514yznECmHLeyLZe6xg",
+  "Reference": "H6C-WXWKSUeDLtNpGOeSMg/kHT514yznECmHLeyLZe6xg",
+  "ParentRef": "H6C-WXWKSUeDLtNpGOeSMg/-qcs3uh5b0m3Ji1bUSUG0Q",
+  "Created": "2024-05-30T00:14:45.0717593Z",
+  "Updated": "2024-05-30T00:14:45.0717593Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.4.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
