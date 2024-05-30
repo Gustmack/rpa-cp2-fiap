@@ -1,0 +1,59 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "itemFila&Sequence_36",
+        "URL_ibge&Sequence_1",
+        "IntResponseStatusUF&Sequence_1",
+        "strResponseContentUF&Sequence_1",
+        "ResponseContent&Sequence_1",
+        "IntResponseStatusCidade&Sequence_1",
+        "strResponseContentCidade&Sequence_1",
+        "ExtractDataTable&Sequence_1",
+        "dataCodigoMunicipio&Sequence_1",
+        "dataPopulacaoSenso&Sequence_1",
+        "dataSalarioMedio&Sequence_1",
+        "dataMatriculaEnsino&Sequence_1",
+        "dataPibPerCapita&Sequence_1",
+        "dataMortalidadeInfantil&Sequence_1",
+        "dataAreaUnidadeTerritorial&Sequence_1",
+        "dataAreaUrbanizada&Sequence_1",
+        "intPopulacaoSenso&Sequence_1",
+        "classificacao&Sequence_1",
+        "rowIndex&Sequence_1",
+        "cellValue&Sequence_1",
+        "ChartVar&Sequence_1",
+        "outputElement&Sequence_1",
+        "index&Sequence_1",
+        "index_1&Sequence_1",
+        "responseAttachment&Sequence_1",
+        "headers&Sequence_1",
+        "joArrResponseContentUF&Sequence_2",
+        "arrCidades&Sequence_2",
+        "strEscolhaUF&Sequence_2",
+        "strEscolhaCidade&Sequence_2",
+        "joArrResponseContentCidade&Sequence_2",
+        "dictEstados&Sequence_2",
+        "arrMunicipios&Sequence_2",
+        "intCodigoMunicipio&Sequence_2",
+        "strCodigoMunicipio&Sequence_2",
+        "estadoId&Sequence_22",
+        "cleanedDataPopulacaoSenso&Sequence_31",
+        "strExcelPath&Sequence_27"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
